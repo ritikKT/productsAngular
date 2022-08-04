@@ -1,0 +1,10 @@
+<div>
+<li *ngFor="let h of hero">
+    <p>{{h.name|uppercase}}</p>
+    <a routerLink="/heros/{{h.id}}">
+        <span>{{h.id}}</span>
+    </a>
+</li>
+
+<app-messages></app-messages>
+</div>
